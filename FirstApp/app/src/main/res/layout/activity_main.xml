@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/eName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/bName"
+        android:hint="Your name..."
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/bName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/eName"
+        android:layout_alignParentRight="true"
+        android:onClick="clicked"
+        android:text="Say Hello" />
+
+
+    <TextView
+        android:id="@+id/tName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Hello"
+        android:textSize="20sp" />
+
+</RelativeLayout>
