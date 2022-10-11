@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 //            tName.setText("Hello, " + eName.getText());
 //        }
 //    }
+//  Show me your apples
 
     public void clicked(View view) {
             showDialog();
@@ -52,5 +53,9 @@ public class MainActivity extends AppCompatActivity {
                         }
                     });
         dialog.show();
+    }
+
+    public void addSome() {
+
     }
 }
